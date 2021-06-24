@@ -14,7 +14,6 @@ body {
 .container{
 	max-width: 1200px;
 	width: 90%;
-	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -46,7 +45,6 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	height: 15%;
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 	display: flex;
@@ -56,7 +54,6 @@ header {
 }
 
 header h1 {
-	float: left;
 	margin: 0;
 	padding: 38px 0;
 }
@@ -65,12 +62,14 @@ header h1 span {
 }
 
 header nav {
-	float: right;
 	padding: 46px 0;
 }
 header nav ul {
 	margin: 0;
 	padding: 0;
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
 }
 header nav ul li {
 	text-transform: uppercase;
@@ -91,19 +90,18 @@ header nav ul li a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
+	flex-flow: column;
 }
 
 .main-image {
-	float: left;
 }
+
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
 }
 
 .main-title {
-	float: left;
 }
 .main-title h2 {
 	text-align: left;
@@ -119,13 +117,12 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
-	height: auto;
+	width: 100%;
 	border-top: 1px solid #eee;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row;
+	flex-flow: column;
 }
 
 .section-one h3 {
@@ -170,11 +167,36 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
 }
+
 footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+
+@media all and (min-width: 768px){
+	/*Tablet styles here */
+	.bottom-section {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row wrap;
+	}
+
+.section-one,
+.section-two,
+.section-three{
+	width: 33%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	}
+}
+
+@media all and (mind-width:1200px){
+	/* Desktop styles here*/
 }
