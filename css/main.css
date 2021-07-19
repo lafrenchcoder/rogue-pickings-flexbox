@@ -44,12 +44,13 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
+    border-bottom: 3px solid #77a466;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 header h1 {
@@ -61,25 +62,25 @@ header h1 span {
 }
 
 header nav {
-	padding: 20px 0;
-	width: 100%;
+    padding: 20px 0;
+    width: 40%;
 }
 header nav ul {
-	margin: 0;
-	padding: 0px;
-/*	display: flex;*/
-	justify-content: center;
-	/*flex-flow: column;*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    /* flex-flow: column; */
 }
 header nav ul li {
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 0.875em;
-	padding-top: 10px;
-	padding-right:0px;
-	padding-bottom:10px;
-	padding-left: 0px;
-	list-style: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.875em;
+    /* padding-top: 10px; */
+    /* padding-right: 0px; */
+    /* padding-bottom: 10px; */
+    /* padding-left: 0px; */
+    list-style: none;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -212,13 +213,13 @@ footer span {
 
 	header h1 {
 		text-align: left;
-		width: 30%;
+		width: 15%;
 		padding: 0;
 		border-bottom: none;
 	}
 
 	header nav {
-		width: 40%;
+		width: 15%;
 	}
 
 	header nav ul {
